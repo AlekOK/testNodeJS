@@ -1,4 +1,4 @@
-// 1. Define an amount of digits in number:
+// #86в. Define an amount of digits in number:
 
 // const defineAmount = (num) => {
 //     let c = 1;
@@ -11,7 +11,7 @@
 
 //############################################
 
-//2. Define number to the certain power:
+// #78a. Define number to the certain power:
 
 // const definePow = (a, n) => {
     
@@ -22,7 +22,7 @@
 
 //##############################################
 
-//3. Change number in array:
+// #632. Change number in array:
 
 // const someArray = [1, 3, 5, 8, 13, 21]
 
