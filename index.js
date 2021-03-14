@@ -1,13 +1,13 @@
 // #86в. Define an amount of digits in number:
 
-// const defineAmount = (num) => {
-//     let c = 1;
-//     while ( ( num /= 10) >= 1 )
-//         c++;
-//     console.log(c);
-// }
+const defineAmount = (num) => {
+    let c = 1;
+    while ( ( num /= 10) >= 1 )
+        c++;
+    console.log(c);
+}
 
-// defineAmount(100)
+defineAmount(100)
 
 //############################################
 
@@ -22,13 +22,13 @@
 
 //##############################################
 
-// #632. Change number in array:
+// #632. Replace number in array:
 
 // const someArray = [1, 3, 5, 8, 13, 21]
 
 // const changeNumber = (someArray, p, k) => {
-//     someArray.splice(k+1, 1, p)
+//     someArray.splice(k, 1, p)
 //     console.log(someArray);
 // }
 
-// changeNumber(someArray, 77, 77)
+// changeNumber(someArray, 77, 0)
