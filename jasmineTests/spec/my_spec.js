@@ -4,9 +4,17 @@ describe("findSum", function() {
     expect(findSum).not.toThrow();
    });
   
-   it("should return 386", function() {
-     expect(findSum(3)).toEqual(386);
+   it("should return 0 ", function() {
+     expect(findSum(0)).toEqual(0);
     });
+
+    it("should return 2", function() {
+      expect(findSum(1)).toEqual(2);
+     });
+
+     it("should return 26", function() {
+      expect(findSum(2)).toEqual(26);
+     });
   }); 
 
 //####################################################
@@ -15,6 +23,10 @@ describe("findSum", function() {
     
     it("function prod exists", function() {
       expect(prod).not.toThrow();
+     });
+
+     it("should return 1 ", function() {
+      expect(prod(1)).toEqual(0.5);
      });
 
     it("should return 0.3125", function() {
@@ -30,22 +42,17 @@ describe("findSum", function() {
       expect(findSumDivNum).not.toThrow();
      });
 
-    it("should return 284 if argument is 220", function() {
-      expect(findSumDivNum(220)).toEqual(284);
+    it("should return [220, 284] if argument is 220 and 300", function() {
+      expect(friendlyNum(220, 300)).toEqual([ [ 220, 284 ] ]);
      });
-
-    it("should return 220 if argument is 284", function() {
-      expect(findSumDivNum(284)).toEqual(220);
+     
+     it("function findSumDivNum exists", function() {
+      expect(friendlyNum).not.toThrow();
      });
-
+  
      it("should return true if have friendlyArr", function() {
       var friendlyArr = [];
       expect(friendlyArr).toBeDefined();
-     });
-
-     it("should return 0 if array is empty", function() {
-      var friendlyArr = [];
-      expect(friendlyArr.length).toBe(0);
      });
    });  
  

@@ -1,3 +1,8 @@
+
+//           Task109
+// Дано натуральное число n.
+// Вычислить 1*2 + 2*3*4 +...+ n(n+1)*...*2n;
+
 function findSum(n){
     sum = 0;
     for(i = 1; i <= n; i++){
@@ -10,9 +15,13 @@ function findSum(n){
     return sum;
   }
 
-// console.log(findSum(3))
+// console.log(findSum(2))
 
 //#############################################################
+
+//           Task117a
+// Дано натуральное число n.
+// Вычислить произведение первых n сомножителей 1/2 * 3/4 * 5/6 ...
 
 function prod(n){
   multN = 1;
@@ -22,9 +31,15 @@ function prod(n){
   return multN;
 }
 
-console.log(prod(11199))
+// console.log(prod(0))
 
-//###########################################################
+// //###########################################################
+
+//           Task560
+// Два натуральных называют дружественными,
+// если каждое из них равно сумме всех делителей другого,
+// кроме самого этого числа. Найти все пары дружественных чисел,
+// лежащих в диапазоне от 200 до 300.
 
 function findSumDivNum(a){
   sumDiv=0;
@@ -49,6 +64,5 @@ function friendlyNum(a,b){
   return friendlyArr;
 }
 
-// console.log(findSumDivNum(220))
-// console.log(findSumDivNum(0))
-// console.log(friendlyNum(200,300))
+
+console.log(friendlyNum(200,300))
